@@ -1,0 +1,66 @@
+AUTOMATED TESTING
+This is the practice of writing code for testing your code.
+
+Nenefits of Automated Testing:
+
+-Tests your  code frequesntly in less time
+-cathes bugs before deployment
+-Ensures confidence during deployment
+-Focuses on the quality of your code other than testing .
+
+TYPES OF TESTS;
+
+-Unit test (Tests a unit of application  with its <external>  dependencies like database,files,etc . These test execut fast, cheap to write  dont provide confidence.)
+-Intergrated test - This tests a class of component with its <external> dependecies.These tests takes longer to execute, provide more confidence.
+-End to End test. This tests  the entire app end -end. They are very slow, very brittle
+
+
+TEST PYRAMID.
+
+-Unit test, Intergration test and filally E2E test.
+
+EXAMPLES OF TEST LIBRARIES.
+   1) Jasmine
+   2) Mocha (Plug-ins for this library are [chai , and sinon])
+   3) Jest
+
+      MOSH'S TECHNIQUE FOR REFACTORING/WRITINIG CLEAN TESTS.
+
+      1) We defin a happy path, and then in each test, we 
+      change one parameter that clearly aligns with the name
+      of the test. i.e in (genres.test.js);
+
+In the POST test, we generate a token(simulating authorized user) at the suite level 
+and save the document in the body of the request in the datase, and return
+it to the user as shown below.
+
+      let token;
+      const exec = async () => {
+         return await request(server)
+            .post('/api/genres')
+            .set('x-auth-token', token)
+            .send({ name: 'genre1' });
+
+      }
+      beforeEach(() => {
+         token = new User().generateAuthToken();
+      })
+
+
+
+     >>> TESTDROVEN DEVELOPMENT.<<<
+      possible tests;-
+      
+         (Negative pasths)
+      -Return 401 if client is not logged in 
+      -Return 400 if customer Id is not provided
+      -Return 400 if movieId if not provided
+      -Return 404 if no rental found for this customers/movie
+      -Return 400 if renatal already processed
+
+            (Happy paths)
+      -Return 200 if its valid request
+      -Set return datase-Calculate the rental frequesntly
+      -Increase the stock
+      -Return the rental 
+

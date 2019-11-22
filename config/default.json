@@ -1,0 +1,9 @@
+{
+   "app": {
+      "developer": "Raymond",
+      "App-name": "video-Library"
+   },
+   "jwtPrivateKey": "",
+   "db": "mongodb://localhost/vidly"
+   
+}

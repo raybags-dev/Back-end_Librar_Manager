@@ -1,0 +1,15 @@
+{
+   "app": {
+      "developer": "*******",
+      "App-name": "*******"
+   },
+
+   "name": "Testing Environment",
+   "mail": {
+      "host": "test-mail-server",
+      "password": "app_password"
+   },
+
+   "jwtPrivateKey": "1234",
+   "db": "mongodb://localhost/vidly_test"
+}

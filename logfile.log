@@ -1,0 +1,4 @@
+{"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-22T08:25:56.107Z"}
+{"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-22T08:25:56.161Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-22T08:46:20.250Z"}
+{"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-22T08:46:20.301Z"}
