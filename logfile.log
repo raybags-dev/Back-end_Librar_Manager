@@ -2,3 +2,9 @@
 {"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-22T08:25:56.161Z"}
 {"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-22T08:46:20.250Z"}
 {"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-22T08:46:20.301Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-25T08:30:03.923Z"}
+{"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-25T08:30:24.639Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-25T08:30:35.686Z"}
+{"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-25T08:30:35.734Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2019-11-25T08:38:08.499Z"}
+{"level":"info","message":"Connected to: mongodb://localhost/vidly...","timestamp":"2019-11-25T08:38:08.548Z"}
