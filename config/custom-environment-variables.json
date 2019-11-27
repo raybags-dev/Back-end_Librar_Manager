@@ -3,5 +3,5 @@
       "password": "app_password"
    },
    "jwtPrivateKey": "videoLibrary_jwtPrivateKey",
-   "db": "vidly_db"
+   "db": "db_url"
 }
