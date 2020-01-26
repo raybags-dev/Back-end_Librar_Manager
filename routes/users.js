@@ -1,3 +1,4 @@
+const validatePassword = require('../middleware/password_validator');
 const validateObjectId = require('../middleware/validateObjectId');
 const auth = require('../middleware/auth');
 const bcrypt = require('bcryptjs');
@@ -18,8 +19,8 @@ router.get('/', auth, async (req, res, nex) => {
 
 router.get('/me', auth, async (req, res, nex) => {
    const user = await User.findById(req.user._id)
-   .sort('-isAdmin')
-   .select({ name: 1, email: 1, _id: false, isAdmin: 1 });
+      .sort('-isAdmin')
+      .select({ name: 1, email: 1, _id: false, isAdmin: 1 });
    res.send(user);
 
 })
@@ -33,13 +34,17 @@ router.post('/', async (req, res, next) => {
 
    user = new User(_.pick(req.body, ['name', 'email', 'password']));
 
-   const salt = await bcrypt.genSalt(10);
-   user.password = await bcrypt.hash(user.password, salt);
-   await user.save();
+   if (validatePassword(user.password)) {
+      const salt = await bcrypt.genSalt(10);
+      user.password = await bcrypt.hash(user.password, salt);
+      await user.save();
 
-   const token = user.generateAuthToken();
-   res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email'])
-   );
+      const token = user.generateAuthToken();
+      res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+   } else {
+      res.status(400).send('Wrong password. Password should contains a capital letter, a number and at least a ` or a ~.');
+   }
+
 
 });
 router.put('/:id', validateObjectId, async (req, res, next) => {

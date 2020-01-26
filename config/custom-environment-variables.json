@@ -3,5 +3,6 @@
       "password": "app_password"
    },
    "jwtPrivateKey": "videoLibrary_jwtPrivateKey",
-   "db": "db_url"
+   "db": "db_url",
+   "dblocal": "db_url2"
 }
