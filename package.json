@@ -1,46 +1,46 @@
 {
-  "name": "video-library",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --watchAll --verbose --coverage",
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": "v8.10.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@hapi/hapi": "^18.4.1",
-    "@hapi/joi": "^16.1.8",
-    "bcryptjs": "^2.4.3",
-    "compression": "^1.7.4",
-    "config": "^3.3.1",
-    "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
-    "fawn": "^2.1.5",
-    "helmet": "^3.23.3",
-    "joi": "^14.3.1",
-    "joi-objectid": "^3.0.1",
-    "joi-password-complexity": "^3.1.0",
-    "jshint": "^2.12.0",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.20",
-    "moment": "^2.27.0",
-    "mongoose": "^5.10.5",
-    "morgan": "^1.10.0",
-    "nodemon": "^1.19.4",
-    "npm": "^6.14.8",
-    "object-id": "0.0.1",
-    "promise": "^8.1.0",
-    "winston": "^2.4.5",
-    "winston-mongodb": "^5.0.4"
-  },
-  "devDependencies": {
-    "jest": "^24.9.0",
-    "supertest": "^3.4.2"
-  }
+    "name": "video-library",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watchAll --verbose --coverage",
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "v14.18.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/hapi": "^18.4.1",
+        "@hapi/joi": "^16.1.8",
+        "bcryptjs": "^2.4.3",
+        "compression": "^1.7.4",
+        "config": "^3.3.7",
+        "express": "^4.17.2",
+        "express-async-errors": "^3.1.1",
+        "fawn": "^2.1.5",
+        "helmet": "^3.23.3",
+        "joi": "^14.3.1",
+        "joi-objectid": "^3.0.1",
+        "joi-password-complexity": "^3.1.0",
+        "jshint": "^2.13.4",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.1",
+        "mongoose": "^5.13.14",
+        "morgan": "^1.10.0",
+        "nodemon": "^1.19.4",
+        "npm": "^6.14.16",
+        "object-id": "0.0.1",
+        "promise": "^8.1.0",
+        "winston": "^2.4.5",
+        "winston-mongodb": "^5.0.7"
+    },
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "supertest": "^3.4.2"
+    }
 }
